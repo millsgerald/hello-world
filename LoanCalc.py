@@ -1,0 +1,10 @@
+# This calculator calcualtes your montly loan payment
+Loan = input('Enter total loan amount\n')
+Interest = input('Enter interest rate i.e 5% = .05\n')
+Payment = input('Enter number of payments\n')
+L = float(Loan)
+i = float(Interest)
+n = float(Payment)
+Monthly = L*(i*(1+i)*n) / ((1+i)*n-1)
+#print (Monthly)
+print ('Your Monthly payment will be ${0:.2f} '.format(Monthly))
